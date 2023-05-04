@@ -130,6 +130,10 @@ int main()
 		}
 		talk_bolck.Play_animation(0, 20, 1000, 400);
 		V.Play_animation(-70, 0, 640, 400);
+		outtextxy(400, 260, "存档   B");
+		outtextxy(400, 320, "读档   N");
+		talk_bolck.Play_animation(0, 20, 1000, 400);
+		V.Play_animation(-70, 0, 640, 400);
 		outtextxy(400, 260, "自己找到过关的方法");
 		outtextxy(400, 320, "共有8关");
 		Sleep(500);
