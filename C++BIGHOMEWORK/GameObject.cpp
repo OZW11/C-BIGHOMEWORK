@@ -37,7 +37,7 @@ Box::Box(float B_x, float B_y, string tagname, GameObject* ToFindPlayer,Physics_
 	this->ANIMATION = new animation*[1];
 	this->ANIMATION[0] = new animation(1, Boxc, Boxc, this->weight, this->hight);
 
-	this->ANIMATOR = new animator(this);                        //初始化动画控制器
+	this->ANIMATOR = new animator(this);    //初始化动画控制器
 
 	this->RIGBODY = new rigbody(this);                          //初始化刚体
 
