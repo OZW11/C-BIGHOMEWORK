@@ -37,7 +37,7 @@ scene::~scene()
 	}
 	
 }
-
+extern player* P1;
 void scene::UPDATE_show_scene()
 {
 	BeginBatchDraw();
@@ -97,6 +97,10 @@ void scene::UPDATE_show_scene()
 		if ((*i)->COLLISION->On_attack_collision())
 		{
 			
+			if (karou_con < 1)
+			{
+				P1->RIGBODY->volocity_x += ((this->PLAYER->RIGBODY->direction == 1 ? -1 : 1) * 16);
+			}
 			if (karou_con < 2)
 			{
 				this->camera_shake(4,1);
