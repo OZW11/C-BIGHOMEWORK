@@ -96,10 +96,9 @@ void scene::UPDATE_show_scene()
 	{
 		if ((*i)->COLLISION->On_attack_collision())
 		{
-			
 			if (karou_con < 1)
 			{
-				P1->RIGBODY->volocity_x += ((this->PLAYER->RIGBODY->direction == 1 ? -1 : 1) * 16);
+				P1->RIGBODY->volocity_x += ((this->PLAYER->RIGBODY->direction == 1 ? -1 : 1) * 14);
 			}
 			if (karou_con < 2)
 			{
