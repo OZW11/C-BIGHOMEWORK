@@ -1,4 +1,4 @@
-GitHub：https://github.com/OZW11/C-BIGHOMEWORK/pull/1
+GitHub：https://github.com/OZW11/C-BIGHOMEWORK/tree/5
 B站：https://www.bilibili.com/video/BV1cg4y1g7hE/?vd_source=379f1204065d38a9bc0210cdbba16665
 程序已打包好，执行路径
 “C++BIGHOMEWORK\Setup1\Powerman\setup.exe”安装游戏
