@@ -1,6 +1,6 @@
 GitHub：https://github.com/OZW11/C-BIGHOMEWORK/pull/1
 B站：https://www.bilibili.com/video/BV1cg4y1g7hE/?vd_source=379f1204065d38a9bc0210cdbba16665
 程序已打包好，执行路径
-“C++BIGHOMEWORK\Setup1\Release\setup.exe”安装游戏
+“C++BIGHOMEWORK\Setup1\Powerman\setup.exe”安装游戏
 游戏内可按b存档，按n读档
 a d w space控制移动 j攻击 k冲刺
