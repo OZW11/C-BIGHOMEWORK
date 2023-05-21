@@ -43,7 +43,7 @@ void scene::UPDATE_show_scene()
 	BeginBatchDraw();
 
 	putimage(0,0,&this->skybox);
-	//¶¯»­²âÊÔÆ÷ //
+	//åŠ¨ç”»æµ‹è¯•å™¨ //
 	//this->PLAYER->get_animation().TakeHit->Play_animation(10,10, 160,111,this->PLAYER->foo);
 	//if (this->PLAYER->foo < 0)this->PLAYER->foo = 0;
 	////////////////////////////////////////////
@@ -56,8 +56,8 @@ void scene::UPDATE_show_scene()
 	}
 
 	this->PLAYER->MyAnimator->show_player();
-	{//UIÌùÍ¼
-		static int chixujihuo = 0;       //ÎŞÓÃµÄ±äÁ¿£¬Ö»ÊÇÓÃÀ´Ê¹ÓÃanimation£¨ÆäÊµÊÇ¶¯»­ÀàµÄÒ»ÖÖÖØÔØ£©
+	{//UIè´´å›¾
+		static int chixujihuo = 0;       //æ— ç”¨çš„å˜é‡ï¼Œåªæ˜¯ç”¨æ¥ä½¿ç”¨animationï¼ˆå…¶å®æ˜¯åŠ¨ç”»ç±»çš„ä¸€ç§é‡è½½ï¼‰
 		this->blood_back->Play_animation(0, -10, 300, 111, chixujihuo);
 		chixujihuo = 0;
 		if(this->PLAYER->health>=1)
@@ -90,7 +90,7 @@ void scene::UPDATE_show_scene()
 	}
 	
 	EndBatchDraw();
-	static int karou_con = 0;                                                      //½â¾öÎŞÏŞ¿¨ÈâÊ±¼ä´øÀ´µÄ¿¨¶ÙÎÊÌâ
+	static int karou_con = 0;                                                      //è§£å†³æ— é™å¡è‚‰æ—¶é—´å¸¦æ¥çš„å¡é¡¿é—®é¢˜
 
 	for (vector<GameObject*>::iterator i = PLAYER->GameObject_list.begin();i< PLAYER->GameObject_list.end(); i++)
 	{
@@ -102,19 +102,19 @@ void scene::UPDATE_show_scene()
 			}
 			if (karou_con < 2)
 			{
-				this->camera_shake(4,1);
+				this->camera_shake(5,3);
 				Sleep(6);
-				this->camera_shake(4,1);
+				this->camera_shake(5,2);
 				Sleep(6);
-				this->camera_shake(2,2);
-				Sleep(6);                                             //¿¨ÈâÊ±¼äºÍÕğ¶¯
+				this->camera_shake(3,1);
+				Sleep(6);                                             //å¡è‚‰æ—¶é—´å’Œéœ‡åŠ¨
 				karou_con++;
 			}
 
 		}
 	}
 	
-	if( PLAYER->dazhaotime > 0)                                                  //´óÕĞ
+	if( PLAYER->dazhaotime > 0)                                                  //å¤§æ‹›
 	{
 		PLAYER->dazhaotime++;
 		this->camera_shake(10,0);
@@ -127,7 +127,7 @@ void scene::UPDATE_show_scene()
 	{
 		karou_con = 0;
 	}
-	if (PLAYER->player_state >=92)                                                    //½ÇÉ«ÔÚ³å´Ì
+	if (PLAYER->player_state >=92)                                                    //è§’è‰²åœ¨å†²åˆº
 	{
 		this->camera_shake(3,0);
 	}
@@ -143,7 +143,7 @@ void scene::UPDATE_show_scene()
 			loadimage(&DIE, "de.png",1000,400);
 			putimage(0, 0, &DIE);
 			settextcolor(RGB(150,10,10));
-			outtextxy(0,0,"°´ÈÎÒâ¼üÍË³ö");
+			outtextxy(0,0,"æŒ‰ä»»æ„é”®é€€å‡º");
 			system("pause");
 			exit(0);
 		}
