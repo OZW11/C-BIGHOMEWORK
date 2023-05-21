@@ -5,7 +5,7 @@
 #include <thread>
 #include<time.h>
 
-static player* P1=new player(2, 250);
+extern player* P1=new player(2, 250);
 static animation V(1, Vc, V_blackc, 640, 400);
 static animation talk_bolck(1, talk_blockc, talk_block_blackc, 1000, 400);
 static guanqia* guan1;
